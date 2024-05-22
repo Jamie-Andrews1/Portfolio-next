@@ -1,0 +1,70 @@
+dialog {
+  &:modal {
+    background-color: var(--background);
+    border-radius: 15px;
+    margin: auto;
+    padding: 1rem;
+    font-weight: 500;
+    max-width: 50ch;
+    animation: expand 0.7s ease;
+    border: none;
+    & h2 {
+      padding: 1rem 0 1rem 0;
+    }
+    & p {
+      text-wrap: pretty;
+    }
+    html:has(&[open]) {
+      overflow: hidden;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  & .close-button {
+    transition: transform 2s ease;
+    position: absolute;
+    inset: 20px 20px auto auto;
+    color: crimson;
+    &:hover {
+      transform: rotate(360deg);
+    }
+    &::after {
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      aspect-ratio: 1;
+      content: "\f00d";
+    }
+  }
+  &::backdrop {
+    background: linear-gradient(45deg, purple, blue);
+    opacity: 0.4;
+  }
+}
+.projectBtn {
+  color: limegreen;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@keyframes expand {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+.images {
+  cursor: pointer;
+  transition: all 1s ease;
+  &:hover {
+    scale: 1.2;
+  }
+}

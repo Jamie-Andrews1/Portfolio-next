@@ -1,0 +1,7 @@
+.back {
+  &:first-child {
+    color: blue;
+    transform: translateX(-10px);
+    transition: transform 1s ease;
+  }
+}

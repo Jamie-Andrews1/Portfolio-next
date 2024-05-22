@@ -1,0 +1,10 @@
+button {
+  all: unset;
+
+  &:focus-visible {
+    outline: 1px solid currentColor;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
