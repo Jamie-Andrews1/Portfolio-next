@@ -11,7 +11,6 @@ export default async function page({}: Props) {
     <div className={styles.portfolio}>
       <Suspense fallback={<ProjectsSkeleton />}>
         <Projects projects={projects} />
-        <ProjectsSkeleton />
       </Suspense>
     </div>
   );

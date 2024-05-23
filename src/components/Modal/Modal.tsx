@@ -67,8 +67,12 @@ export function Modal({ content }: any) {
             />
             <span>
               <p>{content.desc}</p>
-              <Link href={`/${content.slug}`} title="Project Page">
-                <p className="projectBtn">Go to page...</p>
+              <Link
+                href={`/${content.slug}`}
+                title="Project Page"
+                className="projectBtn"
+              >
+                Go to page...
               </Link>
             </span>
             <button onClick={toggleModal} className="close-button" />
