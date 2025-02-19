@@ -5,11 +5,11 @@ export async function getProjects(): Promise<project[]> {
   // Retrieve slugs from post routes
   const slugs = (
     await readdir("./src/app/(projects)", { withFileTypes: true })
-  ).filter(dirent => dirent.isDirectory());
+  ).filter((dirent) => dirent.isDirectory());
 
   // Retrieve metadata from MDX files
   const projects = await Promise.all(
-    slugs.map(async ({ name }) => {
+    slugs.toReversed().map(async ({ name }) => {
       if (name) {
         const { metadata } = await import(`./app/(projects)/${name}/page.mdx`);
 
@@ -20,5 +20,5 @@ export async function getProjects(): Promise<project[]> {
       }
     })
   );
-  return projects.filter(p => p !== null); // Exclude null entries
+  return projects.filter((p) => p !== null); // Exclude null entries
 }

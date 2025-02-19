@@ -210,6 +210,7 @@ nav .links a {
     background-color: var(--nav-colour);
     inset: unset;
     bottom: 0;
+    left: 0;
     transform: translateY(0);
   }
   .navbar:not(.visible) {
