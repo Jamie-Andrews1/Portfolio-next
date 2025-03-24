@@ -1,0 +1,29 @@
+export const metadata = {
+  index: 2,
+  title: "Recipe Sharer",
+  stack: "C# | .Net | Razor | SQLite",
+  slug: "recipes",
+  thumb: "/images/thumbs/recipe.png",
+  featuredImg: "/images/featured/recipeBanner.png",
+  url: "https://recipes.jamieandrews.co.uk",
+  desc: "A web app to display recipes that I like with ingredients and directions.",
+};
+import BackBtn from "../../../components/BackBtn/BackBtn";
+
+# {metadata.title}
+
+## {metadata.stack}
+
+[_...view site_](https://recipes.jamieandrews.co.uk)<BackBtn/>
+
+<>![Recipe Sharer](/images/featured/recipeBanner.png "Recipe Sharer")</>
+
+### **Backend web app in using c# with .Net**
+
+This is a little recipe sharing app which uses DotNet framework with c# and Razor pages for display.
+
+It uses the MVC pattern and Identity Api for user functionality, using JWT for authentication also. I decided to stick with SQLite using Entity Framework Core for ORM.
+
+I used image uploads to local with filepath uploads to database, on Delete all is removed at once. Images are handled with imagesharp package and set to a size on upload.
+
+Descriptions for the recipes use markdown using the MarkDig package they are parsed in markdown format.

@@ -104,8 +104,9 @@ h3 {
 }
 .about p {
   text-shadow: none;
-  font-size: clamp(1.2rem, 1.3vw, 1.5rem);
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
   max-width: 75ch;
+  text-wrap: pretty;
 }
 p {
   margin: 16px auto;

@@ -5,7 +5,7 @@ interface Props {}
 export default function Footer({}: Props) {
   return (
     <footer>
-      <p>&copy; 2024 Jamie</p>
+      <p>&copy; 2025 Jamie</p>
     </footer>
   );
 }

@@ -20,5 +20,6 @@ export async function getProjects(): Promise<project[]> {
       }
     })
   );
-  return projects.filter((p) => p !== null); // Exclude null entries
+
+  return projects.sort((a, b) => a.index - b.index).filter((p) => p !== null); // Exclude null entries
 }
