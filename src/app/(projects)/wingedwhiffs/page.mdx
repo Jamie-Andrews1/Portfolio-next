@@ -1,4 +1,3 @@
-import Head from "next/head";
 export const metadata = {
   index: 1,
   title: "Winged Whiffs",
@@ -8,6 +7,14 @@ export const metadata = {
   featuredImg: "/images/featured/wingedwhiffsBanner.png",
   url: "https://wingedwhiffs.co.uk",
   desc: "I made this site for a new small business, using Typescript for typechecking. I decided to use strapi with Nextjs for easy management of the site once up and running. I used PostgreSQL for its database and integrated Stripe for a payment solution.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 import BackBtn from "../../../components/BackBtn/BackBtn";
 
@@ -25,8 +32,3 @@ I made this site for a new small business, using Typescript for typechecking giv
 
 I decided to use strapi in with Nextjs for easy management of the site once up and running.
 I used PostgreSQL for its database and integrated Stripe for a payment solution.
-
-<Head>
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="googlebot" content="noindex,nofollow" />
-</Head>

@@ -15,7 +15,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </h3>
     ),
-    img: props => (
+    img: (props) => (
       <Image
         sizes="100vw"
         width={700}
