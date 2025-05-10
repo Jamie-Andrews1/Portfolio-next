@@ -1,12 +1,12 @@
 .header {
   display: grid;
   gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(50vmin, 1fr));
+  grid-template-columns: 1fr 1fr;
   margin-top: 2rem;
   place-items: center;
 
   & h1 {
-    text-wrap: pretty;
+    text-wrap: balance;
     max-width: 12ch;
   }
   & h3 {
@@ -36,13 +36,16 @@
 .header p a:hover {
   background-size: 0 3px, 100% 3px;
 }
+
 .image {
   font-style: italic;
   padding: 0;
-  width: 60%;
+  aspect-ratio: 16/9;
+  width: min(20ch, 60%);
   height: auto;
   color: currentColor;
   visibility: var(--main-image);
+  grid-column: span 2;
 }
 .btn {
   display: inline-block;
@@ -65,11 +68,22 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .projLinks {
+    margin-block: auto;
+  }
+  .welcome {
+    display: flex;
+    flex-direction: column;
+  }
   .header {
+    flex-grow: 1;
     margin-block: 0;
-    grid-template-rows: 1.5fr 1.5fr;
+    grid-template-columns: 1fr;
     & .image {
       margin: auto;
     }
+  }
+  .image {
+    grid-column: unset;
   }
 }

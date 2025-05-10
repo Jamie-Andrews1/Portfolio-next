@@ -117,9 +117,7 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
-footer {
-  margin-top: auto;
-}
+
 footer p {
   font-size: 1rem;
   text-align: center;
@@ -267,6 +265,9 @@ nav .links a {
       font-weight: 900;
       content: "\f00d";
     }
+  }
+  footer p {
+    margin: 4rem auto;
   }
 }
 
