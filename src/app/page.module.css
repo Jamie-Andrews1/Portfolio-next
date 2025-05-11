@@ -1,10 +1,10 @@
 .header {
   display: grid;
   gap: 40px;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
   margin-top: 2rem;
   place-items: center;
-
   & h1 {
     text-wrap: balance;
     max-width: 12ch;
@@ -76,14 +76,7 @@
     flex-direction: column;
   }
   .header {
-    flex-grow: 1;
     margin-block: 0;
     grid-template-columns: 1fr;
-    & .image {
-      margin: auto;
-    }
-  }
-  .image {
-    grid-column: unset;
   }
 }

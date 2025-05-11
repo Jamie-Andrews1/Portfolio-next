@@ -101,6 +101,9 @@ h3 {
   flex-direction: column;
   place-content: center;
 }
+.content:has(section) {
+  flex-direction: unset;
+}
 .about {
   padding-top: 20px;
 }
