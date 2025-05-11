@@ -8,6 +8,7 @@
   :nth-child(n + 5) {
     margin: 1rem;
     max-width: 75ch;
+    text-wrap: pretty;
   }
   & p:nth-of-type(1) {
     display: flex;

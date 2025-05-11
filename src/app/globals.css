@@ -16,18 +16,22 @@
   --navbar-height: 49px;
   --nav-colour: hsl(0 0% 100% / 0.2);
   --projectsClr: #808080;
+  --homeColor: none;
+  --homeBlendMode: none;
 }
 :root.dark {
   --font-color: hsl(300, 46%, 68%);
   --background: #121212;
   --background-nav: hsla(0, 57%, 25%, 0.555);
   --nav-colour: #121212;
-  --Hero: #121212;
+  --Hero: url("/images/sunset.jpg");
   --main-image: visible;
   --nav-border: #ffff;
   --projectBtn: #330000;
   --email: #cccc3a;
   --projectsClr: #ccc;
+  --homeColor: grey;
+  --homeBlendMode: color-burn;
 }
 * {
   box-sizing: border-box;
@@ -46,8 +50,8 @@ body {
   background-color: var(--background);
   background-size: cover;
   color: var(--font-color);
-  min-height: 100svh;
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   overflow-x: clip;
@@ -56,6 +60,8 @@ html,
 body:has(section) {
   background: var(--Hero);
   background-size: cover;
+  background-color: var(--homeColor);
+  background-blend-mode: var(--homeBlendMode);
 }
 .sr-only {
   position: absolute;

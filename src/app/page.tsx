@@ -37,14 +37,6 @@ export default function page({}: Props) {
           />
         </Link>
       </span>
-      <Image
-        className={styles.image}
-        src="/images/vscode.png"
-        alt="image"
-        width={800}
-        height={450}
-        priority
-      />
     </section>
   );
 }
