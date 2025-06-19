@@ -6,20 +6,16 @@ export default function page({}: Props) {
       <h1>About Me</h1>
 
       <p>
-        {" "}
-        With an ambitious attitude and keen interest in learning to better
-        myself. I enjoy learning and developing the best designs in the most
-        efficient way.
+        Being an enthusiastic learner, with high interest in all things code
+        related. I try to learn something new everyday.
       </p>
       <p>
-        Enthusiastic about writing code, and learning new things I have been
-        self teaching for years. starting with Html and Css, moving on to
-        Javascript. Learning React, working with gatsby and nextJs.
+        I enjoy learning frontend, backend and dev ops technologies, trying new
+        things and keeping up to date.
       </p>
       <p>
-        Then creating a full MERN stack site and Hosting it with my own linux
-        server using Caddy server with PostgreSql for a database, and continuing
-        my journey with writing in C looking at assembly code.
+        I have created sites using NextJs and Typescript but also like to go
+        back and work on programming in C and data structures algorithms.
       </p>
     </div>
   );

@@ -8,9 +8,7 @@ const FontAwesomeIcon = dynamic(() =>
 );
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-interface Props {}
-
-export default function page({}: Props) {
+export default function page() {
   return (
     <section className={styles.header}>
       <div className={styles.welcome}>

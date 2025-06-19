@@ -2,9 +2,8 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import styles from "../BackBtn/back.module.css";
-interface Props {}
 
-export default function BackBtn({}: Props) {
+export default function BackBtn() {
   const router = useRouter();
 
   return (

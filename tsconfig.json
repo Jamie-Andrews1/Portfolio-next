@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/hellome/page.mdx"
+    "src/app/hellome/page.mdx",
+    "src/app/about/page.mdx"
   ],
   "exclude": ["node_modules"]
 }

@@ -5,11 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faSun } from "@fortawesome/free-regular-svg-icons";
 import "./styles.css";
-import { useEffect, useState } from "react";
 
-interface Props {}
-
-export default function ThemeSwitch({}: Props) {
+export default function ThemeSwitch() {
   const themeCtx: {
     isDarkTheme?: boolean;
     toggleThemeHandler: () => void;
