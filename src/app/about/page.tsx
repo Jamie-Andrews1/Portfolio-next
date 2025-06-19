@@ -15,7 +15,7 @@ export default function page({}: Props) {
       </p>
       <p>
         I have created sites using NextJs and Typescript but also like to go
-        back and work on programming in C and data structures algorithms.
+        back and work on programming in C and data structures and algorithms.
       </p>
     </div>
   );
