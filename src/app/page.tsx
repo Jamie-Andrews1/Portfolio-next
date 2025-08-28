@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import styles from "@/app/page.module.css";
 import Link from "next/link";
 import { Metadata } from "next";
+import { Heading } from "@/components/MainHeading";
 
 const FontAwesomeIcon = dynamic(() =>
   import("@fortawesome/react-fontawesome").then((mod) => mod.FontAwesomeIcon)
@@ -18,7 +19,9 @@ export default function page() {
   return (
     <section className={styles.header}>
       <div className={styles.welcome}>
-        <h1>Welcome...</h1>
+        <div className={styles.splitHead}>
+          <Heading main={"Welcome..."} />
+        </div>
         <p>
           <a href="mailto:andrews_j@live.co.uk">Email me @</a>
         </p>
