@@ -7,7 +7,7 @@ export default function page({}: Props) {
 
       <p>
         I Have Been developing since 2020 using HTML, CSS and Javascript. Later
-        I moved to React and NodeJs for Backends creating my own Api's.
+        I moved to React and NodeJs for Backends creating my own Api&apos;s.
       </p>
       <p>I am also Experienced with Strapi, Contentful and Wordpress.</p>
       <p>
