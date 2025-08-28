@@ -68,8 +68,6 @@ export function ProjectsSkeleton() {
         <ProjectSkeleton />
         <ProjectSkeleton />
         <ProjectSkeleton />
-        <ProjectSkeleton />
-        <ProjectSkeleton />
       </div>
     </div>
   );

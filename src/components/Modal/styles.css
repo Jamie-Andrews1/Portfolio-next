@@ -64,6 +64,7 @@ dialog {
 .images {
   cursor: pointer;
   transition: all 1s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   &:hover {
     scale: 1.2;
   }

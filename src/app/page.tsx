@@ -2,11 +2,17 @@ import React from "react";
 import dynamic from "next/dynamic";
 import styles from "@/app/page.module.css";
 import Link from "next/link";
-import Image from "next/image";
+import { Metadata } from "next";
+
 const FontAwesomeIcon = dynamic(() =>
   import("@fortawesome/react-fontawesome").then((mod) => mod.FontAwesomeIcon)
 );
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
+export const metadata: Metadata = {
+  title: "Home Page",
+  description: "By Jamie",
+};
 
 export default function page() {
   return (
