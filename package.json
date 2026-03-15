@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p 7000",
-    "lint": "next lint",
+    "lint": "eslint .",
     "lint:fix": "next lint --fix",
+    "prebuild": "pnpm run lint",
     "test": "vitest"
   },
   "dependencies": {
@@ -22,7 +23,6 @@
     "@next/mdx": "^14.2.35",
     "@types/mdx": "^2.0.13",
     "@vitejs/plugin-react": "^6.0.1",
-    "eslint": "^10.0.3",
     "gray-matter": "^4.0.3",
     "next": "14.2.2",
     "pnpm": "^9.15.9",
@@ -32,13 +32,18 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@eslint/compat": "^2.0.3",
+    "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.58.2",
     "@types/node": "^20.19.37",
     "@types/react": "^18.3.28",
     "@types/react-dom": "^18.3.7",
+    "eslint": "^9.39.4",
     "eslint-config-next": "14.2.2",
+    "eslint-plugin-playwright": "^2.10.0",
     "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-vitest": "^0.5.4",
     "globals": "^17.4.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.57.0",

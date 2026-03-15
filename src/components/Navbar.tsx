@@ -3,28 +3,32 @@ import { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import ThemeSwitch from "./ThemeSwitch";
 
-interface Props {}
-
-export function Navbar({}: Props) {
+export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  const ref: any = useRef(null);
-  const btnRef: any = useRef(null);
-
+  const ref = useRef<HTMLUListElement | null>(null);
+  const btnRef = useRef<HTMLButtonElement | null>(null);
   const title = "Jamie Andrews";
 
   useEffect(() => {
     // add when mounted
     document.addEventListener("mousedown", handleClick);
     function handleClick(event: MouseEvent) {
-      if (btnRef.current.contains(event.target)) {
-        if (ref.current.getAttribute("data-visible") === "false") {
+      if (
+        event.target instanceof Node &&
+        btnRef.current &&
+        btnRef.current.contains(event.target as Node)
+      ) {
+        if (
+          ref.current &&
+          ref.current.getAttribute("data-visible") === "false"
+        ) {
           btnRef.current.setAttribute("aria-expanded", "true");
           return ref.current.setAttribute("data-visible", "true");
         }
       }
-      if (ref.current.getAttribute("data-visible", "true")) {
-        btnRef.current.setAttribute("aria-expanded", "false");
+      if (ref.current && ref.current.setAttribute("data-visible", "true")) {
+        btnRef.current && btnRef.current.setAttribute("aria-expanded", "false");
         return ref.current.setAttribute("data-visible", "false");
       }
     }

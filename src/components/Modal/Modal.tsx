@@ -3,13 +3,13 @@ import { type ElementRef, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import "./styles.css";
 import Image from "next/image";
+import { type Content } from "@/helpers/projectTypes";
 import Link from "next/link";
 
-export function Modal({ content }: any) {
+export function Modal({ content }: { content: Content }) {
   const [isOpen, setIsOpen] = useState(false);
   const [rootModal, setRootModal] = useState<HTMLElement | null>(null);
   const dialogRef = useRef<ElementRef<"dialog">>(null);
-
   useEffect(() => {
     // document.addEventListener("mousedown", (e: Event) => {
     //   if (dialogRef.current !== null) {
@@ -77,7 +77,7 @@ export function Modal({ content }: any) {
             </span>
             <button onClick={toggleModal} className="close-button" />
           </dialog>,
-          rootModal
+          rootModal,
         )}
     </>
   );
