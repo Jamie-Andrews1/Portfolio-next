@@ -1,4 +1,5 @@
 export interface project {
+  index: number;
   title: string;
   stack: string;
   slug: string;

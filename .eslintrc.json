@@ -1,3 +1,24 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:playwright/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "vitest"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "error",
+    "vitest/no-focused-tests": "error",
+    "vitest/no-identical-title": "error",
+    "playwright/no-wait-for-timeout": "warn",
+    "playwright/expect-expect": "error"
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:vitest/recommended"]
+    }
+  ]
 }

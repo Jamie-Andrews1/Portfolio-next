@@ -3,9 +3,7 @@ import { getProjects } from "../../projects";
 import { Projects, ProjectsSkeleton } from "@/components/Projects";
 import { Suspense } from "react";
 
-interface Props {}
-
-export default async function page({}: Props) {
+export default async function page() {
   const projects = await getProjects();
   return (
     <div className={styles.portfolio}>

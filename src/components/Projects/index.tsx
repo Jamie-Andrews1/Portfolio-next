@@ -1,4 +1,4 @@
-import { project } from "@/helpers/projectTypes";
+import type { project } from "@/helpers/projectTypes";
 import Link from "next/link";
 import styles from "./projects.module.css";
 import { Suspense } from "react";
