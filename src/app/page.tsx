@@ -1,12 +1,12 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import styles from "@/app/page.module.css";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import { Metadata } from "next";
 import { Heading } from "@/components/MainHeading";
 
 const FontAwesomeIcon = dynamic(() =>
-  import("@fortawesome/react-fontawesome").then((mod) => mod.FontAwesomeIcon)
+  import("@fortawesome/react-fontawesome").then((mod) => mod.FontAwesomeIcon),
 );
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -22,9 +22,7 @@ export default function page() {
         <div className={styles.splitHead}>
           <Heading main={"Welcome..."} />
         </div>
-        <p>
-          <a href="mailto:andrews_j@live.co.uk">Email me @</a>
-        </p>
+        <h3>Posts</h3>
       </div>
 
       <span className={styles.projLinks}>

@@ -1,5 +1,5 @@
 import type { project } from "@/helpers/projectTypes";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import styles from "./projects.module.css";
 import { Suspense } from "react";
 import { Modal, ImageSkeleton } from "@/components/Modal/Modal";

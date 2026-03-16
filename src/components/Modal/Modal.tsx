@@ -4,7 +4,7 @@ import { createPortal } from "react-dom";
 import "./styles.css";
 import Image from "next/image";
 import { type Content } from "@/helpers/projectTypes";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 export function Modal({ content }: { content: Content }) {
   const [isOpen, setIsOpen] = useState(false);

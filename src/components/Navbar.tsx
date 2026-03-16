@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useEffect, useState } from "react";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import ThemeSwitch from "./ThemeSwitch";
 
 export function Navbar() {
@@ -27,7 +27,7 @@ export function Navbar() {
           return ref.current.setAttribute("data-visible", "true");
         }
       }
-      if (ref.current && ref.current.setAttribute("data-visible", "true")) {
+      if (ref.current && ref.current.getAttribute("data-visible") === "true") {
         btnRef.current && btnRef.current.setAttribute("aria-expanded", "false");
         return ref.current.setAttribute("data-visible", "false");
       }
