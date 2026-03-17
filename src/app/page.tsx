@@ -4,6 +4,7 @@ import styles from "@/app/page.module.css";
 import { Link } from "next-view-transitions";
 import { Metadata } from "next";
 import { Heading } from "@/components/MainHeading";
+import ProjectTags from "@/components/ProjectTags";
 
 const FontAwesomeIcon = dynamic(() =>
   import("@fortawesome/react-fontawesome").then((mod) => mod.FontAwesomeIcon),
@@ -23,6 +24,7 @@ export default function page() {
           <Heading main={"Welcome..."} />
         </div>
         <h3>Posts</h3>
+        <ProjectTags />
       </div>
 
       <span className={styles.projLinks}>

@@ -237,6 +237,7 @@ nav .links a {
       display: flex;
       z-index: 1000;
       inset: auto 0 0 30%;
+      height: 100svh;
       gap: 2em;
       flex-direction: column;
       padding: min(30vh, 10rem) 2em;
