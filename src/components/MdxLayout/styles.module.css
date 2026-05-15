@@ -6,12 +6,10 @@
 .mdxlayout {
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
+  min-width: 100%;
 }
 
-.mdxlayout :nth-child(1),
-.mdxlayout :nth-child(n + 2) .mdxlayout :nth-child(-n + 3),
-.mdxlayout :nth-child(n + 5) {
+.mdxlayout > *:not(img):not(figure) {
   margin: 1rem;
   max-width: 75ch;
   text-wrap: pretty;

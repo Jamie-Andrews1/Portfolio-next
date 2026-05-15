@@ -19,6 +19,7 @@
   --projectsClr: #808080;
   --homeColor: none;
   --homeBlendMode: none;
+  --tagAlign: start;
 }
 :root.dark {
   --font-color: hsl(300, 46%, 68%);
@@ -33,6 +34,7 @@
   --projectsClr: #ccc;
   --homeColor: none;
   --homeBlendMode: none;
+  --tagAlign: space-between;
 }
 * {
   box-sizing: border-box;

@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start -p 7000",
     "lint": "eslint .",
+    "deploy": "pm2 stop all && pnpm build && pm2 start all",
     "lint:fix": "next lint --fix",
     "prebuild": "pnpm run lint",
     "test": "vitest"

@@ -1,11 +1,14 @@
 .posts {
-  padding-top: 20px;
-  place-self: center;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
   place-items: center;
 
-  & > * {
-    margin-bottom: 2rem;
+  & h2 {
+    text-align: center;
+  }
+
+  & :first-child {
+    margin-top: unset;
   }
 }
