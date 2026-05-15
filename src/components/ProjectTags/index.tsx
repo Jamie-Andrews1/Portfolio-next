@@ -6,7 +6,7 @@ export default async function page() {
   return (
     <ul style={{ listStyle: "none", marginLeft: "10px" }}>
       {projects.map((p) => (
-        <Link href={`/${p.slug}`} key={p.index}>
+        <Link href={`/${p.slug}`} key={p.title}>
           <li>{p.stack}</li>
         </Link>
       ))}

@@ -23,7 +23,9 @@ export default function page() {
         <div className={styles.splitHead}>
           <Heading main={"Welcome..."} />
         </div>
-        <h3>Posts</h3>
+        <Link rel="stylesheet" href="/posts">
+          <h3>Posts</h3>
+        </Link>
         <ProjectTags />
       </div>
 

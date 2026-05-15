@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer>
-      <p>&copy; 2025 Jamie</p>
+      <p>&copy; 2026 Jamie</p>
     </footer>
   );
 }

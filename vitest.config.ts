@@ -1,12 +1,9 @@
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
-import mdx from "@mdx-js/rollup"; // You'll need this to parse MDX in tests
+import mdx from "@mdx-js/rollup";
 
 export default defineConfig({
-  plugins: [
-    react(),
-    mdx(), // Add this to handle the .mdx extension
-  ],
+  plugins: [react(), mdx()],
   test: {
     environment: "node",
     globals: true,
